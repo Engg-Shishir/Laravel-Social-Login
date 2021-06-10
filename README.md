@@ -42,3 +42,37 @@
 + `php artisan migrate`
 <br><br>
 
+
+
+
+
++ Go to Social Media (`Facebook,Google,Github,Linkedin`) Developer Option.
++ Login & Get `CLIENT_ID`, `CLIENT_SECRET`, `CALLBACK_URL` and put inside `.env` file. Here i create Github Login System.So for my case `.env` file look like
+```php
+    GITHUB_CLIENT_ID=
+    GITHUB_CLIENT_SECRET=
+    GITHUB_CALLBACK_URL=
+```
++ Make Some Configuration Setup
+  + config/services.php
+
+  ```php
+    'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'redirect' => env('GITHUB_CALLBACK_URL),
+    ],
+  ```
+  + config/app.php
+  ```php
+    'providers' => [​
+        Laravel\Socialite\SocialiteServiceProvider::class,​
+    ],​
+    
+    'aliases' => [​
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,​
+    ],
+  ```
+<br><br>
+
+
