@@ -22,3 +22,13 @@ Route::get('/', function () {
 
 // Call Github SignIn Page
 Route::get('/CallGithubSignInPage',[SocialController::class,'CallGithubSignInPage']);
+
+
+
+// Github Call Back With Data
+Route::get('/GithubCallback',[SocialController::class,'GithubCallback']);
+
+
+
+// User Dashboard
+Route::get('/dashboard',[SocialController::class,'dashboard']);
