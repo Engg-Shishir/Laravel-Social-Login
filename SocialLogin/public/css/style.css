@@ -1,0 +1,92 @@
+#home {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../image/two.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#home .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .card-body a {
+  padding: 10px 20px;
+  width: 25rem;
+}
+
+#home i {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#dashboard {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #363636;
+}
+
+#dashboard .card {
+  height: 80vh;
+  margin-top: 20px;
+}
+
+#dashboard .card .card-header {
+  text-align: center;
+  padding: 20px !important;
+}
+
+#dashboard .card .card-header img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+}
+
+#dashboard .card .card-header h2 {
+  color: white;
+  margin-top: 10px;
+}
+
+#dashboard .card .card-body {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#dashboard i {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
