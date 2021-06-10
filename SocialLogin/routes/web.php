@@ -31,4 +31,4 @@ Route::get('/GithubCallback',[SocialController::class,'GithubCallback']);
 
 
 // User Dashboard
-Route::get('/dashboard',[SocialController::class,'dashboard']);
+Route::get('/dashboard',[SocialController::class,'dashboard'])->middleware('SocialLoginCheck');
