@@ -62,5 +62,12 @@ class SocialController extends Controller
     function dashboard(){
         return view('dashboard');
     }
+
+
+    // User Logout
+    function logout(Request $request){
+        $request->Session()->flush();
+        return redirect('/');
+    }
     
 }

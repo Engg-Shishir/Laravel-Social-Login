@@ -98,3 +98,10 @@
 <br><br>
 
 
+
+
+
+<h1 style="color:red;background-color:black;padding:10px;text-align:center;font-weight:bold;border:2px solid;"> (●'◡'●) ----The End---- (●'◡'●)</h1>
+<br><br><br>
+
+
