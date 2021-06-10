@@ -76,3 +76,25 @@
 <br><br>
 
 
+
+
+
+
++ LoginCheck Middleware `php artisan make:Middleware LoginCheckMiddleware`
+```php
+    $login = $request->Session()->has('email');
+    if($login==true){
+        return $next($request);
+    }else{
+        return redirect('/');
+    }
+```
++ app\http\kernel.php
+```php
+    protected $routeMiddleware = [
+        'SocialLoginCheck' =>\App\Http\Middleware\LoginCheckMiddleware::class,
+    ];
+```
+<br><br>
+
+
